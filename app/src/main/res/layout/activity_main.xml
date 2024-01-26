@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calificaciones"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/TextPrimerParcial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primer Parcial"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/Title"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="16dp"/>
+
+    <EditText
+        android:id="@+id/TextSegundoParcial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Segundo Parcial"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/TextPrimerParcial"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="16dp"/>
+
+    <Button
+        android:id="@+id/buttonPromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Promedio"
+        android:layout_below="@id/TextSegundoParcial"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/textPromedio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promedio: "
+        android:textSize="18sp"
+        android:layout_below="@id/buttonPromedio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+</RelativeLayout>
